@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
   s.homepage         = "http://www.google.com"
 
   s.resources        = 'MaaiiConnectResources.bundle'
+  s.public_header_files = 'headers/*.h'
 end
