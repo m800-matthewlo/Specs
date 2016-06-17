@@ -1,25 +1,28 @@
 Pod::Spec.new do |s|
-  s.name             = "MaaiiConnect"
-  s.version          = "2.5.1"
-  s.author           = 'M800 Limited'
-  s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+s.name = "MaaiiConnect"
+s.version = "2.5.1"
+s.summary = "MaaiiConnect static library"
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-    LICENSE
-  }
-  s.source           = { :git => "https://github.com/m800-matthewlo/MaaiiConnect.git", :tag => "#{s.version}" }
-  s.summary          = "Maaii Connect Library"
-  s.homepage         = "http://www.google.com"
+s.description = <<-DESC
+This iOS Static library is used to explain how to distribute iOS Static library via cocoapods
+DESC
 
-  s.resources        = 'MaaiiConnectResources.bundle'
-  s.public_header_files = 'headers/*.h'
+s.homepage = "http://www.m800.com"
+s.license = { :type => "BSD", :file => "LICENSE" }
+
+s.author = { "M800 Limited" => "support@m800.com" }
+
+s.platform = :ios, "6.0"
+s.source = { :git => "https://github.com/m800-matthewlo/MaaiiConnect.git", :tag => s.version.to_s}
+s.source_files = "include/*.h"
+s.public_header_files = "include/*.h"
+s.resources        = 'MaaiiConnectResources.bundle'
+s.frameworks       = 'Foundation', 'CFNetwork', 'UIKit', 'Security', 'CoreTelephony', 'MobileCoreServices', 'QuartzCore', 'CoreData', 'SystemConfiguration', 'CoreGraphics', 'AVFoundation', 'AssetsLibrary', 'StoreKit'
+
+s.preserve_paths = "libMaaiiConnect.a"
+s.ios.vendored_library = "libMaaiiConnect.a"
+
+s.libraries = "z", "resolv", "xml2"
+s.requires_arc = true
 end
