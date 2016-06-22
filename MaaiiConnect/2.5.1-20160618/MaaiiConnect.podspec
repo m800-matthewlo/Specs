@@ -14,14 +14,14 @@ s.license = { :type => "BSD", :file => "LICENSE" }
 s.author = { "M800 Limited" => "support@m800.com" }
 
 s.platform = :ios, "6.0"
-s.source = { :git => "https://github.com/m800-matthewlo/MaaiiConnect.git", :tag => s.version.to_s}
-s.source_files = "include/*.h"
-s.public_header_files = "include/*.h"
-s.resources        = 'MaaiiConnectResources.bundle'
+s.source = { :git => "https://modulus.maaii.com/MaaiiConnect.zip" }
+s.source_files = "MaaiiConnect/include/*.h"
+s.public_header_files = "MaaiiConnect/include/*.h"
+s.resources        = 'MaaiiConnect/MaaiiConnectResources.bundle'
 s.frameworks       = 'Foundation', 'CFNetwork', 'UIKit', 'Security', 'CoreTelephony', 'MobileCoreServices', 'QuartzCore', 'CoreData', 'SystemConfiguration', 'CoreGraphics', 'AVFoundation', 'AssetsLibrary', 'StoreKit'
 
-s.preserve_paths = "libMaaiiConnect.a"
-s.ios.vendored_library = "libMaaiiConnect.a"
+s.preserve_paths = "MaaiiConnect/libMaaiiConnect.a"
+s.ios.vendored_library = "MaaiiConnect/libMaaiiConnect.a"
 
 s.libraries = "z", "resolv", "xml2"
 s.requires_arc = true
