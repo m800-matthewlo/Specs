@@ -14,7 +14,7 @@ s.license = { :type => "BSD", :file => "LICENSE" }
 s.author = { "M800 Limited" => "support@m800.com" }
 
 s.platform = :ios, "6.0"
-s.source = { :git => "https://modulus.maaii.com/MaaiiConnect.zip" }
+s.source = { :http => "https://modulus.maaii.com/MaaiiConnect.zip" }
 s.source_files = "MaaiiConnect/include/*.h"
 s.public_header_files = "MaaiiConnect/include/*.h"
 s.resources        = 'MaaiiConnect/MaaiiConnectResources.bundle'
