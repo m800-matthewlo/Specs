@@ -14,9 +14,9 @@ s.license = { :type => "BSD", :file => "LICENSE" }
 s.author = { "M800 Limited" => "support@m800.com" }
 
 s.platform = :ios, "7.0"
-s.source = { :git => "https://github.com/m800-matthewlo/MSME.git", :tag => s.version.to_s}
-s.source_files = "include/*.h"
-s.public_header_files = "include/*.h"
+s.source = { :http => "https://modulus.maaii.com/MSME.zip" }
+s.source_files = "MSME/include/*.h"
+s.public_header_files = "MSME/include/*.h"
 s.frameworks       = 'Foundation'
 
 s.preserve_paths = "libMSME-ios.a"
