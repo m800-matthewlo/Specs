@@ -19,6 +19,6 @@ s.source_files = "MSME/include/*.h"
 s.public_header_files = "MSME/include/*.h"
 s.frameworks       = 'Foundation'
 
-s.preserve_paths = "libMSME-ios.a"
-s.ios.vendored_library = "libMSME-ios.a"
+s.preserve_paths = "MSME/libMSME-ios.a"
+s.ios.vendored_library = "MSME/libMSME-ios.a"
 end
